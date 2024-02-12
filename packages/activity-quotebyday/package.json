@@ -1,0 +1,27 @@
+{
+   "name": "activity-quotebyday",
+   "private": true,
+   "version": "0.0.0",
+   "type": "module",
+   "files": [
+      "dist"
+   ],
+   "main": "./dist/activity-quotebyday.umd.js",
+   "module": "./dist/activity-quotebyday.es.js",
+   "exports": {
+      ".": {
+         "import": "./dist/activity-quotebyday.es.js",
+         "require": "./dist/activity-quotebyday.umd.js"
+      }
+   },
+   "scripts": {
+      "dev": "vite build --mode development",
+      "build": "vite build",
+      "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+      "preview": "vite preview",
+      "storybook": "storybook dev -p 6006",
+      "build-storybook": "storybook build"
+   },
+   "dependencies": {},
+   "devDependencies": {}
+}
